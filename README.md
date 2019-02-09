@@ -69,5 +69,7 @@ using deep reflection.
         ```
         
 # security manager
-* By default, when you run
-  your application on your computer, the security manager is not installed for your application
+* by default the security manager is not installed
+* access is handled through the Java security manager
+* if a security manager is installed access to inaccessible members
+depends on the permission granted
