@@ -67,3 +67,7 @@ using deep reflection.
         
         assertThat(company.getPrivateField(), is("new field value"));
         ```
+        
+# security manager
+* By default, when you run
+  your application on your computer, the security manager is not installed for your application
