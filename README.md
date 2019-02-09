@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/java11-deep-reflection-in-module.svg?branch=master)](https://travis-ci.com/mtumilowicz/java11-deep-reflection-in-module)
+
 # java11-deep-reflection-in-module
 
 # preview
