@@ -7,7 +7,8 @@ useful:
 * https://github.com/mtumilowicz/java11-deep-reflection
 
 # project description
-We will show how to get / set private field within module.
+We will show how to get / set private field within module
+using deep reflection.
 1. module
     ```
     module main {
