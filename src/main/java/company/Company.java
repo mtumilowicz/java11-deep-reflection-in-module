@@ -5,4 +5,8 @@ package company;
  */
 public class Company {
     private String privateField = "privateField";
+
+    public String getPrivateField() {
+        return privateField;
+    }
 }
