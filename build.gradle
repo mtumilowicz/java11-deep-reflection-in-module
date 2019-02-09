@@ -12,7 +12,24 @@ repositories {
     mavenCentral()
 }
 
+ext.moduleName = 'main'
+
+compileJava {
+    inputs.property("moduleName", moduleName)
+    doFirst {
+        options.compilerArgs = [
+                '--module-path', classpath.asPath,
+        ]
+        classpath = files()
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
 dependencies {
-    compile group: 'com.google.guava', name: 'guava', version: '27.0-jre'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.google.guava', name: 'guava', version: '27.0.1-jre'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
 }
