@@ -6,6 +6,7 @@ group 'java11-deep-reflection-in-module'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 11
+targetCompatibility = 11
 
 repositories {
     mavenCentral()
